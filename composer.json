@@ -1,0 +1,35 @@
+{
+    "name": "yiicod/yii2-laravel5queue",
+    "description": "Laravel 5 queue for Yii2 framework",
+    "type": "yii-extension",
+    "license": "New BSD License",
+    "authors": [
+        {
+            "name": "Alexey Orlov",
+            "email": "aaorlov88@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Virchenko Maksim",
+            "email": "muslim1992@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Sergey Palkin",
+            "email": "whity.mouse@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "yiicod\\laravel5queue\\": ""
+        }
+    },
+    "require": {
+        "illuminate/queue": "^5.2",
+        "illuminate/encryption": "^5.2",
+        "paragonie/random_compat": "^1.2",
+        "jeremeamia/superclosure": "^2.0",
+        "yiisoft/yii2-mongodb": "^2.0"
+    }
+}
