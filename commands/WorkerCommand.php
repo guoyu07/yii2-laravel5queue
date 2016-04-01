@@ -101,7 +101,7 @@ class WorkerCommand extends Controller
      */
     private function createDaemon()
     {
-        /*if ($this->isAlreadyRunning()) {
+        if ($this->isAlreadyRunning()) {
             echo sprintf("\n[%s] is running already.\n", $this->daemonName);
             exit();
         }
@@ -120,7 +120,7 @@ class WorkerCommand extends Controller
 
         $pid = getmypid();
         echo sprintf("\n[%s] running with PID: %s\n", $this->daemonName, $pid);
-        file_put_contents($this->getLockFilePath(), $pid);*/
+        file_put_contents($this->getLockFilePath(), $pid);
 
         $this->runWorker();
     }
